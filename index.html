@@ -5,6 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gorlami — your company's back office, run by one agent</title>
 <meta name="description" content="Gorlami is a managed back office for small companies. You talk to one agent; specialists behind it handle mail, follow-through, calendar and documents, and ask you only for the decisions that matter.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gorlami">
+<meta property="og:title" content="Gorlami — your company's back office, run by one agent">
+<meta property="og:description" content="Gorlami is a managed back office for small companies. You talk to one agent; specialists behind it handle mail, follow-through, calendar and documents, and ask you only for the decisions that matter.">
+<meta property="og:url" content="https://jcbrioso1.github.io/gorlami/">
+<meta property="og:image" content="https://jcbrioso1.github.io/gorlami/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:alt" content="The Gorlami app icon: a tuxedo with a black bow tie and a red rose">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gorlami — your company's back office, run by one agent">
+<meta name="twitter:description" content="Gorlami is a managed back office for small companies. You talk to one agent; specialists behind it handle mail, follow-through, calendar and documents, and ask you only for the decisions that matter.">
+<meta name="twitter:image" content="https://jcbrioso1.github.io/gorlami/assets/og-image.png">
 <style>
   :root { --bg:#000; --panel:#1c1c1e; --card:#2c2c2e; --line:#3a3a3c; --fg:#f5f5f7; --muted:#8e8e93; --accent:#f5f5f7; }
   @media (prefers-color-scheme: light) { :root { --bg:#f5f5f7; --panel:#fff; --card:#fff; --line:#d2d2d7; --fg:#1d1d1f; --muted:#6e6e73; } }
@@ -26,13 +42,23 @@
   .quiet { color:var(--muted); font-size:15px; }
   footer { margin-top:72px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; display:flex; gap:20px; flex-wrap:wrap; }
   a { color:inherit; }
+  .hero { margin:0; width:100%; aspect-ratio:3/2; max-height:78vh; overflow:hidden; background:#000; }
+  .hero img { display:block; width:100%; height:100%; object-fit:cover; object-position:50% 8%; }
+  .hero + .wrap { padding-top:40px; }
 </style>
 </head>
 <body>
+<figure class="hero">
+  <img src="assets/hero-1536.jpg"
+       srcset="assets/hero-768.jpg 768w, assets/hero-1536.jpg 1536w"
+       sizes="100vw" width="1536" height="1024"
+       alt="Gorlami: a tuxedo with a black bow tie and a red rose on the lapel"
+       fetchpriority="high">
+</figure>
 <div class="wrap">
   <header>
     <div class="mark" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 4l6 4 6-4v16H6z"/><path d="M12 8v12"/><path d="M9.5 10.5l2.5 2 2.5-2-2.5-1.5z" fill="#b3122b" stroke="none"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 5 6.2V20.5h14V6.2L15 4"/><path d="M9 4l3 11 3-11"/><path d="M8.2 3.4 12 5.6 8.2 7.8zM15.8 3.4 12 5.6 15.8 7.8z" fill="#000" stroke-width="1.2"/><circle cx="12" cy="5.6" r="1.05" fill="currentColor" stroke="none"/><path d="M14.9 11.3l-.9 2" stroke="#2f6b3a" stroke-width="1.1"/><circle cx="15.5" cy="9.9" r="1.7" fill="#c8102e" stroke="none"/><path d="M15.5 9.3a.6.6 0 1 1-.6.6" stroke="#7a0a1c" stroke-width="0.6"/></svg>
     </div>
     <div class="brand">Gorlami</div>
   </header>
