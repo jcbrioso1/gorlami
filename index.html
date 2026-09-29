@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gorlami — your company's back office, run by one agent</title>
+<meta name="description" content="Gorlami is a managed back office for small companies. You talk to one agent; specialists behind it handle mail, follow-through, calendar and documents, and ask you only for the decisions that matter.">
+<style>
+  :root { --bg:#000; --panel:#1c1c1e; --card:#2c2c2e; --line:#3a3a3c; --fg:#f5f5f7; --muted:#8e8e93; --accent:#f5f5f7; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f5f5f7; --panel:#fff; --card:#fff; --line:#d2d2d7; --fg:#1d1d1f; --muted:#6e6e73; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:840px; margin:0 auto; padding:64px 20px 96px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:56px; }
+  .mark { width:40px; height:40px; border-radius:10px; background:var(--panel); border:1px solid var(--line); display:grid; place-items:center; }
+  .mark svg { width:24px; height:24px; }
+  .brand { font-weight:600; letter-spacing:.2px; }
+  h1 { font-size:44px; line-height:1.1; letter-spacing:-.6px; margin:0 0 20px; font-weight:700; }
+  .lede { font-size:21px; color:var(--muted); margin:0 0 40px; max-width:680px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin:40px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .card h3 { margin:0 0 8px; font-size:15px; letter-spacing:.4px; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  .card p { margin:0; }
+  h2 { font-size:26px; letter-spacing:-.3px; margin:56px 0 14px; }
+  p { margin:0 0 16px; }
+  .quiet { color:var(--muted); font-size:15px; }
+  footer { margin-top:72px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; display:flex; gap:20px; flex-wrap:wrap; }
+  a { color:inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 4l6 4 6-4v16H6z"/><path d="M12 8v12"/><path d="M9.5 10.5l2.5 2 2.5-2-2.5-1.5z" fill="#b3122b" stroke="none"/></svg>
+    </div>
+    <div class="brand">Gorlami</div>
+  </header>
+
+  <h1>The back office your company never had.</h1>
+  <p class="lede">You talk to one person: Gorlami. Behind that person, a small team of specialists reads your mail, keeps promises from slipping, watches the calendar and files the documents. You only hear about the decisions that need you.</p>
+
+  <div class="grid">
+    <div class="card"><h3>Emily · Mail</h3><p>Keeps the inbox clean as mail arrives. Labels, files, drafts replies, and raises anything that needs a human answer.</p></div>
+    <div class="card"><h3>Chase · Follow-through</h3><p>Tracks every "I'll send it Friday" and every unpaid invoice until it is actually done.</p></div>
+    <div class="card"><h3>Callie · Calendar</h3><p>Turns a thread of "Thursday?" and "3pm works" into one hold, and never double-books.</p></div>
+    <div class="card"><h3>Prue · Documents</h3><p>Finds the right file, reads it, and cites where the answer came from.</p></div>
+  </div>
+
+  <h2>How it stays safe</h2>
+  <p>Gorlami works inside limits you set. Routine work happens quietly. Anything that leaves the company — sending, spending, deleting, granting new access — waits for your approval, and the approval shows exactly what a yes will do before you give it. Every action is recorded so you can always see what got done, what is in motion, and what is waiting on you.</p>
+
+  <h2>Who it is for</h2>
+  <p>Small and mid-size companies that need an office to run while the owner is on a roof, in a courtroom, or with a customer. One Gorlami per company. Extra people get windows into the same office, not separate assistants that don't talk to each other.</p>
+
+  <h2>Status</h2>
+  <p class="quiet">Gorlami is in private development with a small group of early companies. To ask about access, write to <a href="mailto:jcbestradaconi@gmail.com">jcbestradaconi@gmail.com</a>.</p>
+
+  <footer>
+    <span>© 2026 Gorlami</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of service</a>
+  </footer>
+</div>
+</body>
+</html>
