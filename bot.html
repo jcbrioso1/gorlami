@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gorlami — The Gorlami web reader</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<style>
+  :root { --bg:#000; --line:#3a3a3c; --fg:#f5f5f7; --muted:#8e8e93; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f5f5f7; --line:#d2d2d7; --fg:#1d1d1f; --muted:#6e6e73; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 20px 96px; }
+  h1 { font-size:34px; letter-spacing:-.4px; margin:0 0 6px; }
+  .meta { color:var(--muted); margin-bottom:36px; }
+  h2 { font-size:21px; margin:36px 0 10px; }
+  p, li { margin:0 0 12px; }
+  ul { padding-left:22px; }
+  a { color:inherit; }
+  footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The Gorlami web reader</h1>
+  <div class="meta">User-Agent: <code>Gorlami/2.1 (+https://jcbrioso1.github.io/gorlami/bot)</code></div>
+
+  <p>Gorlami is a back-office assistant for small businesses. When a business owner using Gorlami is working on something — answering a customer, checking a supplier, looking something up — Gorlami may read a single web page on that owner's behalf: a page linked in an email they received, a page they named, or a search result.</p>
+
+  <h2>What it reads, and how</h2>
+  <ul>
+    <li><strong>Single pages, on behalf of one business owner,</strong> one at a time, when that owner is working on something. It is not a crawler and does not index the web.</li>
+    <li><strong>A plain request:</strong> one GET, no cookies, no logins, no forms, and no JavaScript. It never submits anything and never follows a link that would do something (unsubscribe, confirm, sign in, pay) or carries a token.</li>
+    <li><strong>A business's own website,</strong> when that business uses Gorlami: a few of its pages at setup, and again about once a week, to keep its own facts (address, hours, services) up to date.</li>
+    <li>What it reads is used to answer the owner who asked. Pages are not republished.</li>
+  </ul>
+
+  <h2>Opting out</h2>
+  <p>Gorlami honours <code>robots.txt</code> rules that name it. To ask Gorlami not to read your site, add:</p>
+  <pre><code>User-agent: Gorlami
+Disallow: /</code></pre>
+  <p>Because Gorlami reads single pages for a person rather than crawling, it treats rules for all robots (<code>User-agent: *</code>) as meant for crawlers when it reads a single page an owner asked for. The weekly check of a business's own website follows <code>robots.txt</code> in full.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about the reader: <a href="mailto:jcbestradaconi@gmail.com">jcbestradaconi@gmail.com</a>.</p>
+
+  <footer>© 2026 Gorlami · <a href="index.html">Home</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></footer>
+</div>
+</body>
+</html>
